@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="styke.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./index.js" defer></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>LOGO</h1>
+        </div>
+        <div class="heading">
+            <h1>Recipe Sharing</h1>
+        </div>
+        <div class="order-list">
+            <ul>
+                <li><a href="./index.html"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+                <hr>
+                <li><a href="./discover.html"><i class="fa-solid fa-compass"></i>Discover</a></li>
+                <hr>
+                <li><a href="./myrecipe.html"><i class="fa-solid fa-bowl-food"></i>My Recipes</a></li>
+                <hr>
+                <li><a href="#"><i class="fa-solid fa-circle-plus"></i>Create Recipe</a></li>
+                <hr>
+                <li><a href="./profile.html"><i class="fa-solid fa-user"></i>View Profile</a></li>
+                <hr>
+                <li><a href="./category.html"><i class="fa-solid fa-layer-group"></i>Categories</a></li>
+                <hr>
+            </ul>
+            <BUtton class="btnn"> <i class="fa-solid fa-arrow-right-from-bracket"></i>Sign out</BUtton>
+        </div>
+    </header>
+    <main class="main">
+        <div class="head">
+            <h1>Create New Recipe</h1>
+        </div>
+        <div class="body">
+            <form action="" class="create">
+                <div class="create-main">
+
+                    <div class="body-left">
+                        <label for="">Recipe Name</label><br>
+                        <input type="text" placeholder="Enter name of recipe"><br>
+                        <label for="">Categories</label><br>
+                        <select name="" id="">
+                            <option value="">Select category</option>
+                            <option value="biryani">biryani</option>
+                            <option value="chicken">chicken</option>
+                            <option value="chines">chines</option>
+                            <option value="desert">desert</option>
+                            <option value="junk">junk</option>
+                        </select><br>
+                        <label for="">Ingredients</label><br>
+                        <input type="text" placeholder=" Enter an ingredient" class="ing">
+                        <input type="text" placeholder=" quantity" class="ing"><br>
+                        <input type="submit" value="+ add new ingredient" class="new1"><br>
+
+                    </div>
+                    <div class="body-right">
+                        <div class="pic">
+                            <img src="" alt="" id="file-ip-1-preview">
+                        </div>
+                        <div class="preview">
+                            <label for="file-ip-1">Upload image</label>
+                            <input type="file" id="file-ip-1" accept="image/*" onchange="showpreview(event);"
+                                class="pic2">
+                        </div>
+                        <label for="">Estimated Time</label><br>
+                        <input type="text" placeholder=" Enter estimate time of your recipe" class="ing">
+                    </div>
+                </div>
+                <div class="body-bottom">
+                    <label for="">How-to</label><br>
+                    <textarea id="w3review" rows="5" cols="60" placeholder="enter instruction"></textarea>
+                </div>
+                <input type="submit" value="submit" class="btn">
+            </form>
+        </div>
+
+
+    </main>
+    <div class="signout">
+        <div class="logout">
+            <h1>Sign Out ?</h1>
+            <p>Areyou sure you want to sign out ?</p>
+            <input type="submit" value="Cancle" class="cancle">
+            <a href="./register.html"><input type="submit" value="Sign out" class="out cancle"></a>
+        </div>
+    </div>
+</body>
+
+</html>

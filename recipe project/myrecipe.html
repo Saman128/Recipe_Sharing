@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="styke.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./index.js" defer></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>LOGO</h1>
+        </div>
+        <div class="heading">
+            <h1>Recipe Sharing</h1>
+        </div>
+        <div class="order-list">
+            <ul>
+                <li><a href="./index.html"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+                <hr>
+                <li><a href="./discover.html"><i class="fa-solid fa-compass"></i>Discover</a></li>
+                <hr>
+                <li><a href="#"><i class="fa-solid fa-bowl-food"></i>My Recipes</a></li>
+                <hr>
+                <li><a href="./create.html"><i class="fa-solid fa-circle-plus"></i>Create Recipe</a></li>
+                <hr>
+                <li><a href="./profile.html"><i class="fa-solid fa-user"></i>View Profile</a></li>
+                <hr>
+                <li><a href="./category.html"><i class="fa-solid fa-layer-group"></i>Categories</a></li>
+                <hr>
+            </ul>
+            <BUtton class="btnn"> <i class="fa-solid fa-arrow-right-from-bracket"></i>Sign out</BUtton>
+        </div>
+    </header>
+    <main class="main">
+        <div class="head">
+            <h1>My Recipes</h1>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="What are you cooking today?">
+            <input type="submit" value="search" class="buton">
+        </div>
+        <div class="my-recipe">
+            <table>
+                <thead>
+                    <th>
+                        <h4>Name</h4>
+                    </th>
+                    <th>
+                        <h4> Status</h4>
+                    </th>
+                    <th>
+                        <h4>Analytics</h4>
+                    </th>
+                </thead>
+                <tbody>
+                    <td>
+                        <h3 class="name"> <img src="./picture/pexels-roman-odintsov-4551832.jpg" alt=""><a
+                                href="">&nbsp;Half
+                                Chicken Biryani</a>
+                        </h3>
+                    </td>
+                    <td class="status"><span class="one"><i class="fa-solid fa-toggle-on"></i></span>&nbsp;<span
+                            class="two2"><i class="fa-solid fa-toggle-off"></i></span></td>
+                    <td class="Analytics"><i class="fa-solid fa-pencil" style="color: #0c692b;"></i> &nbsp;
+                        &nbsp;<i class="fa-solid fa-trash" style="color: #9b0202;"></i></td>
+                </tbody>
+
+            </table>
+
+        </div>
+    </main>
+    <div class="signout">
+        <div class="logout">
+            <h1>Sign Out ?</h1>
+            <p>Areyou sure you want to sign out ?</p>
+            <input type="submit" value="Cancle" class="cancle">
+            <a href="./register.html"><input type="submit" value="Sign out" class="out cancle"></a>
+        </div>
+    </div>
+</body>
+
+</html>
