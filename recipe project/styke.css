@@ -586,6 +586,14 @@ p span {
 
 }
 
+.text-of {
+    text-decoration: line-through;
+}
+
+.status-btn {
+    border: none;
+}
+
 tbody i {
     font-size: 1.5rem;
     cursor: pointer;
@@ -594,19 +602,19 @@ tbody i {
 .one {
     color: #0c692b;
     margin-left: 0.2rem;
+
 }
 
-.one1 {
+
+.one:hover {
     color: #0c692b;
-    display: none;
-}
-
-.two2 {
-    display: none;
-    color: #9b0202;
 }
 
 .two {
     color: #9b0202;
 
+}
+
+.two:hover {
+    color: #9b0202;
 }
