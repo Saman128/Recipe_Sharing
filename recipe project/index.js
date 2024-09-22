@@ -26,27 +26,26 @@ function showpreview(event) {
     }
 }
 
+const statusButtons = document.querySelectorAll(".status-btn");
 
-const bt1 = document.querySelector(".one");
-const bt2 = document.querySelector(".two2");
-const name = document.querySelector(".name");
-function stus() {
-    if (bt1.classList.contains("one") || bt2.classList.contains("two2")) {
-        bt1.classList.remove("one");
-        bt1.classList.add("one1");
-        bt2.classList.remove("two2");
-        bt2.classList.add("two");
-        if (bt2.classList.contains("two")) { name.style.textDecoration = " line-through"; }
+statusButtons.forEach(button => {
+    button.addEventListener("click", function () {
+        const icon = this.querySelector("i");
+        const name = this.parentElement.previousElementSibling;
 
+        if (icon.classList.contains("fa-toggle-on")) {
+            icon.classList.remove("fa-toggle-on");
+            icon.classList.add("fa-toggle-off");
+            this.classList.remove("one");
+            this.classList.add("two");
+            name.classList.add("text-of");
 
-    } else {
-        bt1.classList.remove("one1");
-        bt1.classList.add("one");
-        bt2.classList.remove("two");
-        bt2.classList.add("two2");
-        if (bt2.classList.contains("two2")) { name.style.textDecoration = "none "; }
-
-    }
-}
-bt1.addEventListener("click", stus);
-bt2.addEventListener("click", stus);
+        } else {
+            icon.classList.remove("fa-toggle-off");
+            icon.classList.add("fa-toggle-on");
+            this.classList.remove("two");
+            this.classList.add("one");
+            name.classList.remove("text-of");
+        }
+    });
+});
